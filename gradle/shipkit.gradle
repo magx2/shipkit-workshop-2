@@ -9,7 +9,7 @@ shipkit {
    gitHub.repository = "magx2/shipkit-workshop-2"
 
    //TODO generate and use your own read-only GitHub personal access token
-   gitHub.readOnlyAuthToken = "72238004718b8e50a47c074185732b2edd5d64dc"
+   gitHub.readOnlyAuthToken = "8b181459c8e216e23546de773ac5a10bd1ed11e5"
 
    //TODO generate GitHub write token, and ensure your Travis CI has this env variable exported
    gitHub.writeAuthToken = System.getenv("GH_WRITE_TOKEN")
