@@ -1,6 +1,7 @@
 package com.example.shipkitworkshop;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
 
 /**
  * This class is for math operations.
@@ -20,6 +21,12 @@ public class MathUtils {
     }
 
     public static boolean isTriangle(BigDecimal a, BigDecimal b, BigDecimal c) {
+        return a.add(b).compareTo(c) > 0
+                && a.add(c).compareTo(b) > 0
+                && b.add(c).compareTo(a) > 0;
+    }
+
+    public static boolean isTriangle(BigInteger a, BigInteger b, BigInteger c) {
         return a.add(b).compareTo(c) > 0
                 && a.add(c).compareTo(b) > 0
                 && b.add(c).compareTo(a) > 0;
